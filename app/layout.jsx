@@ -1,3 +1,4 @@
+import Navbar from '@/components/Navbar.jsx';
 import '@/assets/styles/globals.css';
 export const metadata = {
     type: 'Property details | find the right property',
@@ -8,8 +9,8 @@ const MainLayout = ({children}) => {
   return (
     <html lang="en">
         <body>
-            
-        <div>{children}</div>
+            <Navbar/>    
+            <main>{children}</main>
         </body>
     </html>
   )
